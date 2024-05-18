@@ -1,0 +1,41 @@
+<html>  
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="rasdik.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/01198f406a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+			<h2 class="judul">Sign up</h2>
+				<form onsubmit="result-false" method="post">
+
+					<input type="text" id="username" placeholder="Username">
+					<i class="fa-solid fa-user"></i>
+
+                      
+					<input type="kelas" id="password" placeholder="Password">
+					<i class="fa-solid fa-lock"></i>
+						<button onclick="login()" class="button">Login</button>
+
+        </form>
+<script type="text/javascript">
+    function login() {
+        var user = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+    
+    
+    if (user =="rashadiky" && pass=="miegoreng"){
+        alert("Login Sukses!");
+        open("menu.html");
+        window.close()
+    }else{
+        alert("Login Gagal!");
+    }
+    }
+</script>
+            </div>
+        </div>
+    </body>
+</html>

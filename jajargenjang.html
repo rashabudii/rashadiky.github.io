@@ -1,0 +1,20 @@
+Luas jajar genjang
+
+<html>
+<head>
+<title>Rumus Luas Jajar Genjang</title>
+<link rel="stylesheet" href="Rawr.css">
+</head>
+<body>
+<h2>Rumus Luas Jajar Genjang</h2>
+<input type="number" placeholder="input alas" id="alas">
+<input type="number" placeholder="input tinggi" id="tinggi"> 
+<button onclick="Hasil()">Calculate Result</button>
+</body>
+<script>
+function Hasil(){
+var alas= document.getElementById("alas").value;
+var tinggi= document.getElementById("tinggi").value;
+document.write("<h1>Hasil dari Luas Jajar Genjang " +alas*tinggi*0.5+ "</h1>")
+}
+</script>
